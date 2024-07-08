@@ -1,0 +1,176 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .calculator {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .form-section {
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+  }
+  .main{
+    display: flex;
+    width: 100%;
+   
+    align-items: center;
+    justify-content: space-between;
+  }
+  .form-section h2 {
+    font-size: 23px;
+    margin-top: 0;
+  }
+  
+  .clear-all {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .amount label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    font-size: 13px;
+
+  }
+  .amount input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+  }
+  
+    
+  
+  .term-rate{
+    display: flex;
+    width: 100%;
+    font-size: 13px;
+    gap: 10px;
+   
+
+  }
+  .term-rate label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .term,.rate{
+    width: 100%;
+  }
+.term input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+   
+}
+.rate input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+
+}
+  .mortage label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .mortage-type label{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+  
+  
+  .calculate-button {
+    background-color: rgb(205, 205, 33);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+  .calculate-button:hover {
+    background-color: #e2e92b;
+  }
+  
+  .results-section {
+    background-color: #1e3c51;
+    color: white;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-end-start-radius: 40px;  }
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .results h3 {
+    margin-top: 0;
+  }
+  
+  .results p {
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator {
+      flex-direction: column;
+    }
+  
+    .term-rate {
+      flex-direction: column;
+    }
+  
+    .mortgage-type {
+      flex-direction: column;
+    }
+  }
+   
