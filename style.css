@@ -127,7 +127,7 @@ body {
     width: 60%;
     font-size: 13px;
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
   }
   
   .calculate-button:hover {
@@ -149,10 +149,12 @@ body {
   .illustration img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
   }
   
   .results h3 {
     margin-top: 0;
+    text-align: center;
   }
   
   .results p {
