@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
   margin: 0;
 }
 
@@ -14,7 +14,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 900px;
   width: 100%;
-  overflow: hidden;
+  margin-top: 20vh;
 }
 
 .calculator {
@@ -27,13 +27,14 @@ body {
   flex: 1;
   min-width: 300px;
 }
+
 .main {
   display: flex;
   width: 100%;
-
   align-items: center;
   justify-content: space-between;
 }
+
 .form-section h2 {
   font-size: 23px;
   margin-top: 0;
@@ -47,6 +48,7 @@ body {
 .form-group {
   margin-bottom: 20px;
 }
+
 .amount label {
   display: block;
   margin-bottom: 10px;
@@ -60,7 +62,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  overflow: none;
 }
 
 .term-rate {
@@ -69,16 +70,19 @@ body {
   font-size: 13px;
   gap: 10px;
 }
+
 .term-rate label {
   display: block;
   margin-bottom: 10px;
   margin-top: 15px;
   font-size: 13px;
 }
+
 .term,
 .rate {
   width: 100%;
 }
+
 .term input {
   width: 100%;
   padding: 10px;
@@ -86,6 +90,7 @@ body {
   border-radius: 7px;
   box-sizing: border-box;
 }
+
 .rate input {
   width: 100%;
   padding: 10px;
@@ -93,11 +98,17 @@ body {
   border-radius: 7px;
   box-sizing: border-box;
 }
+
 .mortage label {
   display: block;
   margin-bottom: 10px;
   margin-top: 15px;
   font-size: 13px;
+}
+
+.mortage-type {
+  display: flex;
+  gap: 10px;
 }
 
 .mortage-type label {
@@ -115,7 +126,7 @@ body {
   padding: 13px;
   border-radius: 30px;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   font-size: 13px;
   margin-bottom: 10px;
   margin-top: 25px;
@@ -154,6 +165,7 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -161,91 +173,40 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-@media (max-width: 575px) {
+
+@media (max-width: 768px) {
   .calculator {
     flex-direction: column;
   }
 
-  .form-section {
-    min-width: auto; 
-  }
-
+  .form-section,
   .results-section {
-    border-top-left-radius: 0; 
+    padding: 15px; 
   }
 
-  .term-rate {
+  .term-rate,
+  .mortgage-type {
     flex-direction: column;
+    gap: 10px;
   }
 
-  .mortage-type {
-    flex-direction: column;
+  .amount input,
+  .term input,
+  .rate input {
+    padding: 8px; 
   }
 
   .calculate-button {
-    width: 100%;
-  }
-
-  .illustration img {
-    margin-bottom: 20px; 
-  }
-
-  .results {
-    padding: 10px; 
-    margin-bottom: 20px; 
-  }
-}
-
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .calculator {
-    flex-direction: column;
-  }
-
-  .form-section {
-    min-width: auto; 
-  }
-
-  .results-section {
-    border-top-left-radius: 0; 
-  }
-
-  .term-rate {
-    flex-direction: column;
-  }
-
-  .mortage-type { 
-    flex-direction: column;
-  }
-
-  .calculate-button {
-    width: 100%; 
+    margin-top: 25px;
   }
 
   .illustration img {
     margin-bottom: 20px;
   }
-
-  .results {
-    padding: 10px; 
-    margin-bottom: 20px; 
+  .results-section{
+    border-end-start-radius: 0;
+  }
+  .container{
+    margin-top: 0;
   }
 }
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-  
-}
-
-
-@media (min-width: 992px) and (max-width: 1199px) {
- }
-@media (min-width: 1200px) and (max-width: 1399px) {
- 
-}
-
-
-@media (min-width: 1400px) {
- 
-}
-
