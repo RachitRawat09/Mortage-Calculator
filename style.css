@@ -160,16 +160,92 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 575px) {
   .calculator {
     flex-direction: column;
+  }
+
+  .form-section {
+    min-width: auto; 
+  }
+
+  .results-section {
+    border-top-left-radius: 0; 
   }
 
   .term-rate {
     flex-direction: column;
   }
 
-  .mortgage-type {
+  .mortage-type {
     flex-direction: column;
   }
+
+  .calculate-button {
+    width: 100%;
+  }
+
+  .illustration img {
+    margin-bottom: 20px; 
+  }
+
+  .results {
+    padding: 10px; 
+    margin-bottom: 20px; 
+  }
 }
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .calculator {
+    flex-direction: column;
+  }
+
+  .form-section {
+    min-width: auto; 
+  }
+
+  .results-section {
+    border-top-left-radius: 0; 
+  }
+
+  .term-rate {
+    flex-direction: column;
+  }
+
+  .mortage-type { 
+    flex-direction: column;
+  }
+
+  .calculate-button {
+    width: 100%; 
+  }
+
+  .illustration img {
+    margin-bottom: 20px;
+  }
+
+  .results {
+    padding: 10px; 
+    margin-bottom: 20px; 
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+ }
+@media (min-width: 1200px) and (max-width: 1399px) {
+ 
+}
+
+
+@media (min-width: 1400px) {
+ 
+}
+
