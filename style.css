@@ -106,17 +106,21 @@ body {
   font-size: 13px;
 }
 
-.mortage-type {
-  display: flex;
-  gap: 10px;
-}
 
-.mortage-type label {
+
+
+.mortage-type .repayment{
   width: 100%;
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 7px;
-  box-sizing: border-box;
+  
+  
+}
+.mortage-type .interest{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+ margin-top: 10px;
 }
 
 .calculate-button {
@@ -126,7 +130,7 @@ body {
   padding: 13px;
   border-radius: 30px;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
   font-size: 13px;
   margin-bottom: 10px;
   margin-top: 25px;
@@ -153,18 +157,19 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .results h3 {
-  margin-top: -10px;
+  margin-top: 10px;
+  
   text-align: center;
 }
 
 .results p {
   margin: 10px 0 0;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -183,6 +188,10 @@ input[type="number"]::-webkit-outer-spin-button {
   .form-section,
   .results-section {
     padding: 15px; 
+  }
+  .main .clear-all{
+    flex-direction: column;
+    
   }
 
   .term-rate,

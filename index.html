@@ -13,7 +13,7 @@
         <div class="form-section">
           <div class="main">
             <h2>Mortgage Calculator</h2>
-            <a href="#" class="clear-all" style="color: black;">Clear All</a>
+            <a href="#" class="clear-all"  style="color: black;">Clear All</a>
           </div>
           <form id="mortgage-form">
             <div class="amount">
@@ -33,14 +33,16 @@
             <div class="mortage">
               <label for="type">Mortgage Type</label>
               <div class="mortage-type">
+                <div class="repayment">
                 <label>
                   <input type="radio" name="type" value="repayment" required />
                   Repayment
-                </label>
+                </label></div>
+                <div class="interest">
                 <label>
                   <input type="radio" name="type" value="interest-only" required />
                   Interest Only
-                </label>
+                </label></div>
               </div>
             </div>
             <button type="submit" class="calculate-button">
