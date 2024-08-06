@@ -7,7 +7,9 @@ body {
   
   margin: 0;
 }
-
+input:focus{
+  border: 2px solid black;
+}
 .container {
   background-color: white;
   border-radius: 10px;
@@ -220,3 +222,4 @@ input[type="number"]::-webkit-outer-spin-button {
     margin-top: 0;
   }
 }
+
